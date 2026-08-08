@@ -1,9 +1,9 @@
 id_university_period,name,teacher_clashes,room_double_bookings,program_semester_overlaps,hours_outside_availability,teachers_without_availability
-3,Marzo 2023 - Julio 2023,17,18,14,24,2
-4,Agosto 2023 - Diciembre 2023,3,20,9,26,0
-5,Febrero 2024 - Junio 2024,1,24,23,14,0
-6,Agosto 2024 - Diciembre 2024,4,28,32,7,0
-7,Febrero 2025 - Junio 2025,17,43,38,36,0
-8,Agosto 2025 - Diciembre 2025,11,38,17,9,0
-9,Febrero 2026 - Junio 2026,12,41,27,17,0
-10,Agosto 2026 - Diciembre 2026,1,43,6,37,0
+3,Marzo 2023 - Julio 2023,17,17,11,26,2
+4,Agosto 2023 - Diciembre 2023,3,19,7,27,0
+5,Febrero 2024 - Junio 2024,0,22,19,15,0
+6,Agosto 2024 - Diciembre 2024,3,27,29,9,0
+7,Febrero 2025 - Junio 2025,15,41,34,38,0
+8,Agosto 2025 - Diciembre 2025,9,36,15,11,0
+9,Febrero 2026 - Junio 2026,10,38,24,17,0
+10,Agosto 2026 - Diciembre 2026,0,41,4,38,0

@@ -62,11 +62,24 @@ def hour_index(day_name, clock_hour):
 
 
 def hour_span(day_name, entry, departure):
-    """Every hour index a class occupies, from its entry and departure times."""
+    """Every hour index a class occupies, from its entry and departure times.
+
+    The clock hour of the departure time is exclusive, including when the
+    departure carries minutes. The institution's evening band runs 18:20 to
+    21:20 and its own `hours` column calls that three hours, not four: a class
+    that starts twenty minutes into an hour also ends twenty minutes into one,
+    so it spans as many grid hours as its declared length. Rounding the
+    departure up instead added an hour to all 569 rows whose band ends off the
+    hour, inflating total teaching time by 565 hours and room occupancy with
+    it.
+
+    Four rows remain where the source disagrees with itself: three declare
+    three hours between 13:00 and 15:00, and one declares three hours from
+    05:00 when the grid opens at 06:00. Both are left as the clock reads,
+    since the times are the more specific record.
+    """
     start = int(entry.split(":")[0])
     end = int(departure.split(":")[0])
-    if departure.split(":")[1] != "00":  # 21:20 ends within the 21:00 hour
-        end += 1
     span = []
     for clock in range(start, end):
         index = hour_index(day_name, clock)

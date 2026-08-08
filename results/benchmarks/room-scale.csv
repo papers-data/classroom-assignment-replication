@@ -1,2 +1,10 @@
 instance,variant,solver,status,seconds,free_rooms
-syn0100,SalonesCount,chuffed,timeout,11.9,
+syn0100,Salones,chuffed,timeout,604.7,
+syn0100,SalonesCount,chuffed,timeout,602.8,
+syn0100,SalonesGC,chuffed,timeout,605.1,
+syn0200,Salones,chuffed,timeout,608.5,
+syn0200,SalonesCount,chuffed,timeout,604.0,
+syn0200,SalonesGC,chuffed,timeout,608.7,
+syn0400,Salones,chuffed,timeout,621.9,
+syn0400,SalonesCount,chuffed,timeout,608.0,
+syn0400,SalonesGC,chuffed,timeout,620.6,

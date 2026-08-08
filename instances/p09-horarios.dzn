@@ -4,7 +4,7 @@
 % publish them); subject resource requirements are inferred from the
 % room the campus used. Both are approximations, not campus data.
 % Availability repair: none. The schedule the campus ran
-% violates the model's hard constraints (teacher clashes 12, rooms double-booked 41, same-cohort overlaps 27, hours taught outside the
+% violates the model's hard constraints (teacher clashes 10, rooms double-booked 38, same-cohort overlaps 24, hours taught outside the
 % declared availability 17), so
 % this instance can be unsatisfiable for reasons present in the data.
 
@@ -24,15 +24,15 @@ A=[|1, 6, 1008, 52, 0, 4
 |5, 1, 1030, 51, 0, 2
 |12, 3, 1031, 51, 1, 4
 |12, 3, 1032, 50, 1, 7
-|12, 3, 1033, 51, 1, 4
+|12, 3, 1033, 51, 1, 3
 |12, 3, 1034, 51, 1, 4
-|12, 3, 1035, 50, 1, 4
+|12, 3, 1035, 50, 1, 3
 |8, 5, 1036, 50, 0, 3
 |8, 5, 1037, 50, 0, 3
-|8, 6, 1038, 51, 1, 4
+|8, 6, 1038, 51, 1, 3
 |8, 6, 1039, 51, 1, 4
-|8, 6, 1040, 50, 1, 4
-|8, 6, 1041, 51, 1, 4
+|8, 6, 1040, 50, 1, 3
+|8, 6, 1041, 51, 1, 3
 |4, 6, 1042, 50, 0, 4
 |4, 6, 1042, 51, 0, 4
 |4, 6, 1043, 50, 0, 3
@@ -58,10 +58,10 @@ A=[|1, 6, 1008, 52, 0, 4
 |3, 8, 1068, 52, 0, 3
 |3, 8, 1069, 50, 0, 3
 |3, 8, 1070, 50, 0, 3
-|6, 6, 1072, 50, 1, 4
-|6, 6, 1074, 50, 1, 4
-|6, 6, 1075, 50, 1, 4
-|6, 6, 1076, 50, 1, 4
+|6, 6, 1072, 50, 1, 3
+|6, 6, 1074, 50, 1, 3
+|6, 6, 1075, 50, 1, 3
+|6, 6, 1076, 50, 1, 3
 |6, 6, 1077, 50, 0, 3
 |6, 6, 1078, 50, 0, 3
 |6, 7, 1080, 51, 0, 3
@@ -70,13 +70,13 @@ A=[|1, 6, 1008, 52, 0, 4
 |6, 7, 1083, 50, 0, 3
 |6, 7, 1084, 50, 0, 3
 |6, 7, 1085, 50, 0, 3
-|2, 2, 1086, 51, 1, 4
-|2, 6, 1087, 50, 1, 4
+|2, 2, 1086, 51, 1, 3
+|2, 6, 1087, 50, 1, 3
 |2, 6, 1088, 50, 0, 3
-|2, 6, 1089, 50, 1, 4
-|2, 6, 1090, 50, 1, 4
+|2, 6, 1089, 50, 1, 3
+|2, 6, 1090, 50, 1, 3
 |2, 6, 1091, 53, 1, 4
-|2, 6, 1092, 50, 1, 4
+|2, 6, 1092, 50, 1, 3
 |2, 7, 1093, 50, 0, 3
 |2, 7, 1094, 50, 0, 3
 |2, 7, 1095, 50, 0, 3
@@ -98,9 +98,9 @@ A=[|1, 6, 1008, 52, 0, 4
 |1, 8, 1140, 51, 0, 1
 |1, 8, 1141, 50, 0, 4
 |6, 8, 1156, 51, 0, 3
-|6, 8, 1160, 50, 1, 4
-|6, 8, 1162, 50, 1, 4
-|12, 5, 1190, 50, 1, 4
+|6, 8, 1160, 50, 1, 3
+|6, 8, 1162, 50, 1, 3
+|12, 5, 1190, 50, 1, 3
 |12, 5, 1191, 50, 1, 4
 |12, 5, 1192, 50, 1, 4
 |12, 5, 1193, 50, 1, 4
@@ -136,30 +136,30 @@ A=[|1, 6, 1008, 52, 0, 4
 |1, 9, 1223, 50, 0, 3
 |1, 9, 1223, 51, 0, 3
 |6, 1, 1224, 52, 0, 3
-|6, 4, 1225, 50, 1, 4
-|6, 8, 1226, 51, 1, 4
-|6, 8, 1227, 50, 1, 4
-|6, 8, 1228, 50, 1, 4
+|6, 4, 1225, 50, 1, 3
+|6, 8, 1226, 51, 1, 3
+|6, 8, 1227, 50, 1, 3
+|6, 8, 1228, 50, 1, 3
 |6, 9, 1229, 51, 0, 3
 |6, 9, 1230, 51, 0, 3
 |6, 9, 1231, 50, 0, 3
 |6, 9, 1233, 50, 0, 3
-|2, 8, 1234, 50, 1, 4
-|2, 8, 1235, 50, 1, 4
+|2, 8, 1234, 50, 1, 3
+|2, 8, 1235, 50, 1, 3
 |6, 9, 1236, 50, 0, 3
 |2, 8, 1237, 50, 0, 3
-|2, 8, 1238, 50, 1, 4
-|2, 8, 1239, 50, 1, 4
+|2, 8, 1238, 50, 1, 3
+|2, 8, 1239, 50, 1, 3
 |2, 9, 1240, 50, 0, 3
 |8, 5, 1241, 50, 0, 3
 |4, 6, 1243, 50, 0, 3
-|2, 8, 1244, 51, 1, 4
+|2, 8, 1244, 51, 1, 3
 |2, 9, 1245, 50, 0, 3
 |2, 9, 1246, 50, 0, 3
 |2, 9, 1247, 50, 0, 3
 |2, 9, 1248, 50, 0, 3
 |2, 9, 1249, 50, 0, 3
-|2, 10, 1250, 50, 1, 4
+|2, 10, 1250, 50, 1, 3
 |6, 9, 1251, 50, 0, 2
 |6, 9, 1251, 51, 0, 2
 |6, 9, 1251, 52, 0, 2
@@ -173,10 +173,10 @@ A=[|1, 6, 1008, 52, 0, 4
 |2, 1, 180, 51, 0, 3
 |2, 1, 181, 50, 0, 3
 |2, 1, 182, 50, 0, 3
-|2, 2, 183, 50, 1, 4
-|2, 2, 184, 50, 1, 4
-|2, 2, 185, 50, 1, 4
-|2, 2, 186, 50, 1, 4
+|2, 2, 183, 50, 1, 3
+|2, 2, 184, 50, 1, 3
+|2, 2, 185, 50, 1, 3
+|2, 2, 186, 50, 1, 3
 |2, 2, 188, 50, 0, 3
 |2, 3, 190, 50, 0, 3
 |2, 3, 191, 50, 0, 3
@@ -185,7 +185,7 @@ A=[|1, 6, 1008, 52, 0, 4
 |2, 3, 195, 50, 0, 3
 |2, 3, 196, 55, 0, 4
 |1, 1, 2, 52, 0, 5
-|2, 10, 231, 50, 1, 4
+|2, 10, 231, 50, 1, 3
 |5, 1, 236, 50, 0, 3
 |5, 1, 239, 50, 0, 3
 |5, 1, 240, 50, 0, 3
@@ -224,18 +224,18 @@ A=[|1, 6, 1008, 52, 0, 4
 |6, 3, 394, 51, 0, 3
 |6, 3, 395, 56, 0, 4
 |6, 3, 395, 57, 0, 4
-|6, 2, 410, 51, 1, 4
-|6, 2, 411, 51, 1, 4
-|6, 2, 412, 50, 1, 4
-|6, 2, 414, 50, 1, 4
+|6, 2, 410, 51, 1, 3
+|6, 2, 411, 51, 1, 3
+|6, 2, 412, 50, 1, 3
+|6, 2, 414, 50, 1, 3
 |6, 2, 415, 51, 0, 3
-|6, 10, 431, 50, 1, 4
-|6, 10, 434, 50, 1, 4
+|6, 10, 431, 50, 1, 3
+|6, 10, 434, 50, 1, 3
 |6, 10, 435, 50, 0, 3
 |6, 10, 435, 51, 0, 3
-|6, 10, 437, 50, 1, 4
-|6, 10, 438, 50, 1, 4
-|6, 10, 439, 50, 1, 4
+|6, 10, 437, 50, 1, 3
+|6, 10, 438, 50, 1, 3
+|6, 10, 439, 50, 1, 3
 |8, 1, 459, 50, 0, 5
 |8, 1, 460, 50, 0, 3
 |8, 1, 460, 51, 0, 3
@@ -245,9 +245,9 @@ A=[|1, 6, 1008, 52, 0, 4
 |8, 3, 464, 50, 0, 4
 |8, 3, 465, 50, 0, 3
 |8, 3, 466, 50, 0, 4
-|8, 2, 467, 50, 1, 7
+|8, 2, 467, 50, 1, 5
 |8, 2, 470, 50, 1, 4
-|8, 2, 471, 51, 1, 4
+|8, 2, 471, 51, 1, 3
 |1, 3, 483, 51, 0, 6
 |1, 3, 483, 52, 0, 6
 |4, 2, 484, 52, 0, 3
@@ -283,7 +283,7 @@ A=[|1, 6, 1008, 52, 0, 4
 |1, 1, 67, 53, 0, 3
 |1, 1, 69, 50, 0, 2
 |1, 1, 70, 54, 0, 4
-|2, 4, 707, 50, 1, 4
+|2, 4, 707, 50, 1, 3
 |1, 2, 72, 52, 0, 5
 |1, 2, 73, 53, 0, 4
 |1, 2, 74, 52, 0, 3
@@ -303,27 +303,27 @@ A=[|1, 6, 1008, 52, 0, 4
 |1, 3, 81, 51, 0, 4
 |2, 5, 810, 50, 0, 3
 |2, 4, 812, 50, 0, 3
-|2, 4, 813, 50, 1, 4
-|2, 4, 814, 50, 1, 4
+|2, 4, 813, 50, 1, 3
+|2, 4, 814, 50, 1, 3
 |2, 4, 815, 50, 0, 3
 |2, 4, 817, 55, 1, 4
-|2, 4, 818, 51, 1, 4
+|2, 4, 818, 51, 1, 3
 |1, 3, 82, 53, 0, 5
 |1, 3, 82, 54, 0, 5
-|6, 4, 826, 50, 1, 4
+|6, 4, 826, 50, 1, 3
 |6, 4, 827, 51, 0, 3
 |6, 4, 828, 56, 0, 4
 |6, 4, 828, 57, 1, 4
-|6, 4, 829, 51, 1, 4
+|6, 4, 829, 51, 1, 3
 |1, 3, 83, 50, 0, 4
-|6, 4, 830, 51, 1, 4
-|6, 4, 832, 50, 1, 4
+|6, 4, 830, 51, 1, 3
+|6, 4, 832, 50, 1, 3
 |8, 5, 837, 50, 0, 4
 |8, 3, 838, 50, 0, 4
 |8, 1, 839, 50, 0, 3
 |1, 3, 84, 50, 0, 3
-|8, 2, 840, 50, 1, 4
-|8, 4, 841, 50, 1, 4
+|8, 2, 840, 50, 1, 3
+|8, 4, 841, 50, 1, 3
 |8, 4, 842, 50, 1, 4
 |8, 4, 843, 50, 1, 4
 |8, 4, 844, 50, 1, 4
@@ -332,8 +332,8 @@ A=[|1, 6, 1008, 52, 0, 4
 |5, 7, 850, 50, 0, 4
 |5, 7, 853, 50, 0, 4
 |12, 1, 855, 51, 1, 2
-|12, 1, 857, 51, 1, 3
-|12, 1, 858, 51, 1, 7
+|12, 1, 857, 51, 1, 2
+|12, 1, 858, 51, 1, 5
 |12, 1, 859, 50, 0, 3
 |4, 2, 860, 50, 0, 3
 |4, 2, 860, 51, 0, 6
@@ -379,25 +379,25 @@ A=[|1, 6, 1008, 52, 0, 4
 |6, 5, 908, 50, 0, 3
 |6, 5, 909, 50, 0, 3
 |5, 3, 911, 50, 0, 3
-|8, 2, 914, 50, 1, 6
+|8, 2, 914, 50, 1, 5
 |3, 4, 917, 50, 0, 3
 |3, 4, 917, 51, 0, 3
 |3, 4, 918, 50, 0, 3
 |2, 2, 921, 53, 0, 3
 |1, 2, 923, 52, 0, 3
-|6, 2, 925, 54, 1, 4
+|6, 2, 925, 54, 1, 3
 |2, 3, 933, 50, 0, 3
 |1, 5, 936, 50, 0, 4
 |1, 5, 936, 51, 0, 4
-|8, 6, 945, 50, 1, 4
+|8, 6, 945, 50, 1, 3
 |8, 5, 947, 50, 0, 3
-|12, 1, 950, 50, 1, 4
-|12, 2, 951, 51, 1, 7
-|12, 2, 952, 52, 1, 4
+|12, 1, 950, 50, 1, 3
+|12, 2, 951, 51, 1, 5
+|12, 2, 952, 52, 1, 3
 |12, 2, 953, 50, 0, 3
-|12, 2, 954, 50, 1, 4
-|12, 2, 955, 50, 1, 4
-|12, 1, 967, 52, 1, 4
+|12, 2, 954, 50, 1, 3
+|12, 2, 955, 50, 1, 3
+|12, 1, 967, 52, 1, 3
 |6, 6, 981, 53, 1, 4
 |];
 Da=[{1, 138, 201, 230, 280},
@@ -569,7 +569,7 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false
-|false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, true , true , false, false, false, false, true , false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , true , false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false
 |false, false, true , true , false, false, false, false, true , false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , true , true , false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false
@@ -585,7 +585,7 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, true , false, false, false, false, true , false, false, true , true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true 
 |false, true , false, false, false, false, true , false, false, true , true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true 
 |false, true , false, false, false, false, true , false, false, true , true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true 
-|false, true , false, false, false, false, true , false, false, true , true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true 
+|false, false, false, false, false, false, true , false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |true , false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, true , false, false, false, false, false, false, true , true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, false, false, false, false, false, true , false, true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false
 |true , false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, true , false, false, false, false, false, false, true , true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, false, false, false, false, false, true , false, true , true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false
@@ -601,7 +601,7 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false
-|false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, true , true , false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false
@@ -617,7 +617,7 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, false, false, false, false, false, false, false, false, true , true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, true , true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, true , true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, true , true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, true , true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, true , true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
-|false, false, false, false, false, false, false, false, false, true , true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, true , true , false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false
 |true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false
@@ -633,7 +633,7 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false
-|false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, true , true , false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, true , false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false
 |true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, true , true , false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false
@@ -649,5 +649,5 @@ D=[|false, false, false, false, false, false, false, false, false, false, false,
 |false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, true , false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, true , true , false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
-|false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
+|false, false, false, false, false, false, true , false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false
 |];

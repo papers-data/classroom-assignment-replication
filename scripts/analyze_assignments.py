@@ -43,7 +43,13 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-from make_instances import HOURS_PER_DAY, DAY_SHIFT_HOURS, hour_span, read_csv
+from make_instances import (
+    HOURS_PER_DAY,
+    DAY_SHIFT_HOURS,
+    hour_span,
+    read_csv,
+    resource_of,
+)
 
 TOTAL_HOURS = 6 * HOURS_PER_DAY
 
@@ -193,7 +199,33 @@ def section_b(frame, spaces, data, report):
     # hour where a room hosts two groups, count how many rooms sat empty. If
     # the campus had free rooms at that moment, capacity pressure is not the
     # explanation and the conflict is administrative.
+    #
+    # Counting any idle room is too weak a test, because the rooms are not
+    # interchangeable: five of the seven resource kinds on this campus exist as
+    # a single room, so fourteen idle general classrooms are worth nothing to a
+    # group that needs the physics laboratory. The strict count below therefore
+    # restricts the free rooms to those of the same resource kind as the room
+    # the clashing groups were assigned to, which is the kind the model would
+    # have to match. Capacity cannot be added to the test, since the enrollment
+    # cap of a group is not recorded anywhere in the source.
+    # The strictest count adds the sub-site. The three sub-sites are physically
+    # separate and the campus treats them as such, reaching for the farthest one
+    # only when the others are full, so a room of the right kind across town is
+    # not a substitute within the same hour either.
+    rooms_by_kind = defaultdict(set)
+    rooms_by_kind_site = defaultdict(set)
+    kind_of_room, site_of_room = {}, {}
+    for space in spaces:
+        kind = resource_of(space["name"])
+        site = space["id_building"]
+        rooms_by_kind[kind].add(space["id_space"])
+        rooms_by_kind_site[(kind, site)].add(space["id_space"])
+        kind_of_room[space["id_space"]] = kind
+        site_of_room[space["id_space"]] = site
+
     free_at_conflict, conflict_hours, saturated = [], 0, 0
+    free_same_kind, saturated_same_kind, by_kind = [], 0, Counter()
+    free_same_kind_site, saturated_same_kind_site = [], 0
     for period in periods:
         subset = frame[frame.period == period]
         per_hour = defaultdict(lambda: defaultdict(set))
@@ -201,13 +233,27 @@ def section_b(frame, spaces, data, report):
             for hour in row["hours_list"]:
                 per_hour[hour][row["id_space"]].add(row["group_key"])
         for hour, rooms in per_hour.items():
-            clashing = sum(1 for groups in rooms.values() if len(groups) > 1)
-            if clashing:
-                conflict_hours += 1
-                free = n_rooms - len(rooms)
-                free_at_conflict.append(free)
-                if free == 0:
-                    saturated += 1
+            clashing = [r for r, groups in rooms.items() if len(groups) > 1]
+            if not clashing:
+                continue
+            conflict_hours += 1
+            free = n_rooms - len(rooms)
+            free_at_conflict.append(free)
+            if free == 0:
+                saturated += 1
+            # One entry per double-booked room, since each names a kind.
+            for room in clashing:
+                kind = kind_of_room.get(room, "Ninguno")
+                by_kind[kind] += 1
+                idle = rooms_by_kind[kind] - set(rooms)
+                free_same_kind.append(len(idle))
+                if not idle:
+                    saturated_same_kind += 1
+                site = site_of_room.get(room)
+                idle_here = rooms_by_kind_site[(kind, site)] - set(rooms)
+                free_same_kind_site.append(len(idle_here))
+                if not idle_here:
+                    saturated_same_kind_site += 1
 
     report["B_pressure"] = {
         "rooms": n_rooms,
@@ -229,6 +275,22 @@ def section_b(frame, spaces, data, report):
         if free_at_conflict else None,
         "pct_conflicts_with_zero_free_rooms": round(
             100 * saturated / conflict_hours, 1) if conflict_hours else None,
+        # Restricted to rooms of the resource kind the clashing groups needed.
+        "double_booked_rooms": len(free_same_kind),
+        "double_bookings_by_resource_kind": dict(by_kind.most_common()),
+        "free_same_kind_mean": round(float(np.mean(free_same_kind)), 2)
+        if free_same_kind else None,
+        "free_same_kind_median": float(np.median(free_same_kind))
+        if free_same_kind else None,
+        "pct_double_bookings_with_zero_free_same_kind": round(
+            100 * saturated_same_kind / len(free_same_kind), 1)
+        if free_same_kind else None,
+        # Same resource kind and same sub-site.
+        "free_same_kind_site_median": float(np.median(free_same_kind_site))
+        if free_same_kind_site else None,
+        "pct_double_bookings_with_zero_free_same_kind_site": round(
+            100 * saturated_same_kind_site / len(free_same_kind_site), 1)
+        if free_same_kind_site else None,
     }
 
 

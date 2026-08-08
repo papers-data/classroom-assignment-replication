@@ -103,10 +103,11 @@ def calibrate(data):
     # free hours cannot host a three-hour class.
     bands = []
     for slot in read_csv(data / "time-slots.csv"):
+        # The departure clock hour is exclusive here for the same reason it is
+        # in hour_span: a band from 18:20 to 21:20 is three hours wide, which
+        # is what the institution's own hours column records.
         start = int(slot["start_time"].split(":")[0])
         end = int(slot["end_time"].split(":")[0])
-        if slot["end_time"].split(":")[1] != "00":
-            end += 1
         offsets = [
             clock - FIRST_HOUR
             for clock in range(start, end)
