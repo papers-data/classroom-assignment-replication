@@ -1,0 +1,7 @@
+instance,stage,solver,status,seconds,objective
+syn0025,horarios,cbc,solved,3.5,3
+syn0025,horarios,gecode,solved,120.8,3
+syn0025,horarios,chuffed,solved,2.1,2
+syn0050,horarios,cbc,solved,6.2,5
+syn0050,horarios,gecode,solved,121.0,7
+syn0050,horarios,chuffed,solved,5.7,7

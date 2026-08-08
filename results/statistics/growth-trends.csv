@@ -1,0 +1,7 @@
+metric,first,last,growth_pct,sen_slope_per_semester,mk_p,ols_slope,ols_ci95,ols_r2,ols_p
+course_groups,286.0,391.0,36.7,15.0,0.0008,15.0,"[np.float64(13.13), np.float64(16.87)]",0.985,0.0
+class_hours,984.0,1394.0,41.7,57.92,0.002,56.52,"[np.float64(46.9), np.float64(66.14)]",0.972,0.0
+teachers,107.0,153.0,43.0,6.9,0.002,6.81,"[np.float64(5.22), np.float64(8.4)]",0.948,0.0
+programs,9.0,10.0,11.1,0.0,0.216,0.13,"[np.float64(-0.03), np.float64(0.3)]",0.384,0.1012
+rooms_used,29.0,27.0,-6.9,-0.23,0.3223,-0.17,"[np.float64(-0.55), np.float64(0.22)]",0.156,0.3336
+occupancy_pct,34.17,48.4,41.6,2.01,0.002,1.96,"[np.float64(1.63), np.float64(2.3)]",0.972,0.0

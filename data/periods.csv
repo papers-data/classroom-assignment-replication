@@ -1,0 +1,11 @@
+id_university_period,name,from,until,status
+2,Agosto 2022 - Diciembre 2022,2022-08-08,2022-12-14,True
+1,Febrero 2022 - Junio 2022,2022-02-08,2022-06-30,True
+3,Marzo 2023 - Julio 2023,2023-03-06,2023-06-30,True
+4,Agosto 2023 - Diciembre 2023,2023-08-22,2023-12-15,True
+5,Febrero 2024 - Junio 2024,2024-02-12,2024-06-30,True
+6,Agosto 2024 - Diciembre 2024,2024-08-12,2024-12-06,True
+7,Febrero 2025 - Junio 2025,2025-02-10,2025-06-30,True
+8,Agosto 2025 - Diciembre 2025,2025-08-19,2025-12-12,True
+9,Febrero 2026 - Junio 2026,2026-02-09,2026-06-12,True
+10,Agosto 2026 - Diciembre 2026,2026-08-19,2026-12-12,True

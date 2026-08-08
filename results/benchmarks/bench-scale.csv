@@ -1,0 +1,4 @@
+instance,stage,solver,status,seconds,objective
+syn0100,horarios,cbc,optimal,25.7,17
+syn0200,horarios,cbc,optimal,77.1,30
+syn0400,horarios,cbc,optimal,324.7,40

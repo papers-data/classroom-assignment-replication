@@ -1,0 +1,7 @@
+CPU: AMD Ryzen 5 3600, 6 cores / 12 threads
+RAM: 31 GB
+Kernel: Linux 7.1.6
+MiniZinc: 2.10.0 (docker minizinc/minizinc:latest)
+Solvers: COIN-BC, Chuffed, Gecode as bundled with MiniZinc 2.10.0
+Runs: one per cell, no repetitions
+Date: 2026-08-07
