@@ -40,12 +40,12 @@ stores availability per teacher and period, and it is tempting to read those
 records as what each teacher said they were free to do. The data does not
 support that reading. Comparing the two tables:
 
-- 98.2% of scheduled class hours fall inside the availability recorded for
+- 98.0% of scheduled class hours fall inside the availability recorded for
   the same teacher and period;
-- for 389 of 1 077 teacher-periods (36%) the availability recorded is
+- for 379 of 1 078 teacher-periods (35%) the availability recorded is
   *exactly* the set of hours that teacher ends up teaching, hour for hour;
-- the median ratio of recorded availability to actual teaching load is 1.18,
-  meaning the typical record grants a teacher 18% more free time than they
+- the median ratio of recorded availability to actual teaching load is 1.20,
+  meaning the typical record grants a teacher 20% more free time than they
   use.
 
 An independently declared availability would be far looser than the schedule
@@ -57,7 +57,7 @@ Two consequences for anyone using this data. Treating the file as a genuine
 constraint makes an instance far tighter than the institution's real
 flexibility, because the model is told each teacher is free almost exactly
 when they teach; this is part of why the faithful instances in `instances/`
-are unsatisfiable. And the residual 1.8% of class hours that fall outside the
+are unsatisfiable. And the residual 2.0% of class hours that fall outside the
 recorded availability should not be read as teachers being scheduled against
 their stated wishes, since the baseline is not a statement of wishes. The
 `-availability` instance variants absorb that residue by construction.
