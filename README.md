@@ -149,10 +149,54 @@ MiniZinc data files for the two models, in the format they read.
 - `syn0050-infeasible`, `syn0200-infeasible`: instances made unsatisfiable on
   purpose, with the cause named in the file header.
 - `historical-conflicts.csv`: the audit of each real period against the
-  model's hard constraints.
+  model's hard constraints, described below.
 
 Every `.dzn` carries a header stating how it was built and which quantities
 are approximations.
+
+### The conflict audit, and the scarcity test
+
+These two are the measurement the accompanying article is built on, so they are
+worth documenting rather than leaving to be read out of the code.
+
+`instances/historical-conflicts.csv` carries one row per academic period and one
+column per hard constraint the model declares:
+
+| Column | Counts hours in which |
+|---|---|
+| `teacher_clashes` | one teacher is scheduled in two rooms at once |
+| `room_double_bookings` | one room hosts two course groups at once |
+| `program_semester_overlaps` | two courses of the same program and semester collide |
+| `hours_outside_availability` | a class falls outside the availability recorded for its teacher |
+| `teachers_without_availability` | a teacher has assignments but no availability record |
+
+Counts are hour-level incidences, not distinct pairs: a two-hour clash counts
+twice. All eight periods carry violations in at least three of the four
+categories, which is the article's central observation.
+
+The scarcity test asks whether those violations reflect a shortage of rooms, and
+it is reported at three strengths because the answer depends on what counts as a
+substitute. `analyze_assignments.py` computes all three:
+
+| Free rooms counted as substitutes | Median free | Violations with none free |
+|---|--:|--:|
+| any idle room among the thirty | 14 | 0.0% |
+| same resource kind | 7 | 14.5% |
+| same resource kind and same sub-site | 3 | 22.8% |
+
+The first is too generous. The thirty rooms fall into seven resource kinds and
+five of those exist as a single room, so idle general classrooms are worth
+nothing to a group that needs the physics laboratory. The third adds the
+sub-site, since the three are physically separate and the campus reaches for the
+farthest only when the others fill. Read at the strictest setting, scarcity
+explains roughly one double-booking in four.
+
+Capacity is deliberately absent from all three. The enrollment cap of a course
+group is not recorded anywhere in the source, so any capacity filter would rest
+on an estimate, and this package does not estimate. The 241 double-booked rooms
+break down by resource kind as 184 general classrooms, 51 computer rooms, and
+three each in the sports hall and the food laboratory; the last six are
+singleton kinds, where no substitute can exist by construction.
 
 ### `models/`
 
