@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+title: "Classroom Assignment: Replication Package"
+message: >-
+  If you use this package, please cite the accompanying article. To cite the
+  package itself, use the concept DOI below, which always resolves to the most
+  recent version.
+type: dataset
+authors:
+  - family-names: "Velásquez Erazo"
+    given-names: "Jhojan Alexander"
+    affiliation: "Escuela de Ingeniería de Sistemas y Computación, Universidad del Valle, Seccional Tuluá"
+  - family-names: "Delgado S."
+    given-names: "Carlos A."
+    orcid: "https://orcid.org/0000-0002-1146-3057"
+    affiliation: "Escuela de Ingeniería de Sistemas y Computación, Universidad del Valle, Seccional Tuluá"
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.21852370
+    description: Concept DOI, resolves to the most recent version
+  - type: doi
+    value: 10.5281/zenodo.21856900
+    description: Version v1.0.4
+repository-code: "https://github.com/papers-data/classroom-assignment-replication"
+abstract: >-
+  Institutional scheduling data from eight consecutive academic periods at the
+  Tuluá campus of Universidad del Valle, the MiniZinc instances derived from it,
+  the two-stage timetabling and room-assignment models, and the scripts that
+  reproduce every table and figure in the accompanying article. Teachers carry
+  labels local to this extract. The source scheduling system's own identifiers
+  and the row-level surrogate keys are withheld, because that system's public
+  endpoint returns them beside the teacher's name. The extract is pseudonymised
+  rather than anonymous, and the README states the residual risk in full. No
+  student-level data is included and no personal datum has been estimated.
+keywords:
+  - classroom assignment
+  - university course timetabling
+  - constraint programming
+  - MiniZinc
+  - benchmark instances
+  - institutional data
+license: CC-BY-4.0
+license-url: "https://github.com/papers-data/classroom-assignment-replication/blob/main/LICENSE"
+version: v1.0.4
+date-released: "2026-08-09"

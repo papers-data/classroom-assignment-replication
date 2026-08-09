@@ -1,5 +1,9 @@
 # Classroom Assignment: Replication Package
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21852370.svg)](https://doi.org/10.5281/zenodo.21852370)
+[![Code: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE)
+
 Data, instances, models, and scripts for *Classroom Assignment: A Two-Stage
 Constraint Formulation*.
 
@@ -284,5 +288,9 @@ always resolves to the most recent version.
 
 Version 1.0.0 of that deposit is superseded and should not be used. It was cut
 from a commit that predated the de-identification described above, and its two
-largest tables still carry the source system's own teacher identifiers. Anyone
-holding a copy should discard it and use the current version instead.
+largest tables still carry the source system's own teacher identifiers. That
+record is marked superseded on Zenodo and removal of its files has been
+requested. Anyone holding a copy should discard it and use the current version.
+
+`CITATION.cff` carries the machine-readable form, so GitHub's *Cite this
+repository* button and reference managers pick it up without hand-editing.
