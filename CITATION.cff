@@ -2,8 +2,7 @@ cff-version: 1.2.0
 title: "Classroom Assignment: Replication Package"
 message: >-
   If you use this package, please cite the accompanying article. To cite the
-  package itself, use the concept DOI below, which always resolves to the most
-  recent version.
+  package itself, use the concept DOI below.
 type: dataset
 authors:
   - family-names: "Velasquez Erazo"
@@ -17,9 +16,6 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.21852370
     description: Concept DOI, resolves to the most recent version
-  - type: doi
-    value: 10.5281/zenodo.21856900
-    description: Version v1.0.4
 repository-code: "https://github.com/papers-data/classroom-assignment-replication"
 abstract: >-
   Institutional scheduling data from eight consecutive academic periods at the
@@ -40,5 +36,5 @@ keywords:
   - institutional data
 license: CC-BY-4.0
 license-url: "https://github.com/papers-data/classroom-assignment-replication/blob/main/LICENSE"
-version: v1.0.4
-date-released: "2026-08-09"
+version: v1.0.5
+date-released: "2026-08-16"

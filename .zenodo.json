@@ -3,7 +3,7 @@
   "upload_type": "dataset",
   "description": "Institutional scheduling data from eight consecutive academic periods, MiniZinc instances derived from it, the timetabling and room-assignment models, and the scripts that reproduce every table and figure in the accompanying article. Teachers carry labels local to this extract; the source system's own identifiers and the row-level surrogate keys are not released, because the system's public endpoint returns them next to the teacher's name. The extract is pseudonymised rather than anonymous: a schedule can be matched against the institution's public schedule page, which the README explains in full. No student-level data is included, and no personal datum has been estimated or inferred.",
   "notes": "Rights in the underlying records belong to Universidad del Valle, which is also the data controller. The class schedules are published by the institution and readable without credentials; the room catalogue and the availability records sit behind authentication and were obtained with the institutional credentials of an author who teaches on the campus concerned. Treatment follows the campus policy on personal data. The CC BY 4.0 licence covers this derived extract and transfers no right over the institution's own records.",
-  "version": "v1.0.4",
+  "version": "v1.0.5",
   "language": "eng",
   "creators": [
     {
