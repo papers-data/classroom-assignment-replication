@@ -1,6 +1,6 @@
 """Turn the AcademiAPP CSV snapshot into MiniZinc instances.
 
-The thesis model (Velásquez 2022) reads two data files per instance:
+The thesis model (Velasquez 2022) reads two data files per instance:
 
     <name>-horarios.dzn   subjects, teachers, availability, day/night hour sets
     <name>-salones.dzn    rooms with capacity and resource, subject requirements

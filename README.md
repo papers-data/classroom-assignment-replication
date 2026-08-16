@@ -233,7 +233,7 @@ of which is vendored here:
 | [BackEndAsignacionSalones](https://github.com/JAlexanderVelasquez/BackEndAsignacionSalones) | Flask API and the MiniZinc models. The models in `models/` come from here. |
 | [Asignacion-de-Salones](https://github.com/JAlexanderVelasquez/Asignacion-de-Salones) | React front end (branch `develop`, subdirectory `asignacion-salones/`): authentication, user administration, the two-file upload, and the help module that documents the input formats. |
 
-Both are the work of Jhojan Alexander Velásquez Erazo and predate this
+Both are the work of Jhojan Alexander Velasquez Erazo and predate this
 package.
 
 ## Reproducing
